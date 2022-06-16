@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from agora_token_builder import RtcTokenBuilder
-from academy.settings import env
 import random
 import time
 import json
