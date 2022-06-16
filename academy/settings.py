@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-iis98+1ruxamj@30%ij(p463ndn7qtv*=6wjo+u#4)zdhx(5g7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['157.245.73.39', 'www.blokchainacademy.az', 'blokchainacademy.az', ]
+ALLOWED_HOSTS = ['157.245.73.39', 'blockhainacademy.az', 'www.blockhainacademy.az', ]
 
 
 # Application definition
