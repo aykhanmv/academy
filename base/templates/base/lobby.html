@@ -1,0 +1,158 @@
+{% load static %}
+{% include "head.html" %}
+{% include "header.html" %}
+<link rel="stylesheet" href="{% static '/css/base_main.css' %}">
+<style>
+    .header, .header-frame{
+        display: none;
+    }
+    .mycabinet{
+        display: none;
+    }
+</style>
+<body>
+
+<header id="header" class="ex-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Blockchain Cabinet'ə xoş gəldin, {{ user.first_name }}</h1>
+            </div> 
+        </div> 
+    </div> 
+</header> 
+
+<div class="ex-basic-1">
+    <div class="container"> 
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumbs">
+                    <a href="{% url 'academy' %}">Home</a><i class="fa fa-angle-double-right"></i><span>Şəxsi kabinet</span>
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+</div>
+
+<!-- Features -->
+<div id="features" class="tabs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <ul class="nav nav-tabs" id="argoTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-list"></i>Crypto Consultation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-envelope-open-text"></i>E-learning</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="argoTabsContent">
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <main>
+
+                                    <section id="form-container">
+                                
+                                        <img id="logo" src="{% static 'images/chat-icon.png' %}"/>
+                                
+                                        <div id="welcome-message">
+                                            <h1>Welcome to MyChat</h1>
+                                            <p>A group video calling platform made just for you!</p>
+                                        </div>
+                                
+                                        <form id="form">
+                                            <div class="field-wrapper">
+                                                <style>
+                                                    .form-field-weird{
+                                                        display: none;
+                                                    }
+                                                </style>
+                                                <div class="form-field">
+                                                    <label>Room:</label>
+                                                    <input type="text" name="room" style="text-transform:uppercase"/>
+                                                </div>
+                                                <!-- value="BlockChainConsultation"  -->
+                                                <div class="form-field form-field-weird">
+                                                    <label>Name:</label>
+                                                    <input type="text" name="username" value="{{ user.first_name }}"  style="text-transform:uppercase"/>
+                                                </div>
+                                
+                                                <div class="form-field">
+                                                    <input type="submit" value="Join Stream" />
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </section>
+                                </main>
+                            </div> <!-- end of col -->
+                            <div class="col-lg-6">
+                                <div class="text-container">
+                                    <h3>List Building Is Easier Than Ever</h3>
+                                    <p>It's very easy to start using Tivo. You just need to fill out and submit the <a class="blue page-scroll" href="sign-up.html">Sign Up Form</a> and you will receive access to the app and all of its features in no more than 24h.</p>
+                                    <ul class="list-unstyled li-space-lg">
+                                        <li class="media">
+                                            <i class="fas fa-square"></i>
+                                            <div class="media-body">Create and embed on websites newsletter sign up forms</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fas fa-square"></i>
+                                            <div class="media-body">Manage forms and landing pages for your services</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fas fa-square"></i>
+                                            <div class="media-body">Add and remove subscribers using the control panel</div>
+                                        </li>
+                                    </ul>
+                                    <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a> -->
+                                </div> <!-- end of text-container -->
+                            </div> <!-- end of col -->
+                        </div> <!-- end of row -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                        <div class="row">
+                            <div class="col-lg-6" style="margin-left: auto !important; margin-right: auto !important;">
+                                <div class="text-container" style="text-align: center !important;">
+                                    <h3>Campaigns Monitoring Tools</h3>
+                                    <p>Campaigns monitoring is a feature we've developed since the beginning because it's at the core of Tivo and basically to any marketing activity focused on results.</p>
+                                    <!-- <ul class="list-unstyled li-space-lg">
+                                        <li class="media">
+                                            <i class="fas fa-square" ></i>
+                                            <div style="flex: none;" class="media-body">Easily plan campaigns and schedule their starting date</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fas fa-square"></i>
+                                            <div style="flex: none;" class="media-body">Start campaigns and follow their evolution closely</div>
+                                        </li>
+                                        <li class="media">
+                                            <i class="fas fa-square"></i>
+                                            <div style="flex: none;" class="media-body">Evaluate campaign results and optimize future actions</div>
+                                        </li>
+                                    </ul> -->
+                                    <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a> -->
+                                </div> <!-- end of text-container -->
+                            </div> <!-- end of col -->
+                        </div> <!-- end of row -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+                    
+                </div> <!-- end of tab content -->
+                <!-- end of tabs content -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of tabs -->
+<script type="text/javascript" src="{% static '/js/custom.js' %}"></script>
+
+{% include "scripts.html" %}
+
+<!--  -->
