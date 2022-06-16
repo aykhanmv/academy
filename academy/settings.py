@@ -1,3 +1,4 @@
+from distutils.log import debug
 import os
 from pathlib import Path
 import environ
@@ -68,13 +69,25 @@ WSGI_APPLICATION = 'academy.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'academydb',
+            'USER': 'academy_admin',
+            'PASSWORD': 'Aykhan@6446',
+            'HOST': 'localhost',
+            'PORT': '',
+        }
+    }
+
 
 
 # Password validation
@@ -114,15 +127,9 @@ USE_TZ = True
 STATIC_URL='/static/'
 MEDIA_URL ='/media/'
 STATICFILES_DIRS=[os.path.join(BASE_DIR, 'static_in_env')]
-VENV_PATH=os.path.dirname (BASE_DIR)
-STATIC_ROOT=os.path.join(VENV_PATH, 'static_root')
-MEDIA_ROOT=os.path.join(VENV_PATH, 'media_root')
+STATIC_ROOT=os.path.join(BASE_DIR, 'static_root')
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media_root')
 
-# STATIC_URL = '/static/'
-# MEDIA_URL = '/media/'
-# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_in_env')]
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
