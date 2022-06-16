@@ -54,59 +54,197 @@
                     <!-- Tab -->
                     <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <main>
-
-                                    <section id="form-container">
-                                
-                                        <img id="logo" src="{% static 'images/chat-icon.png' %}"/>
-                                
-                                        <div id="welcome-message">
-                                            <h1>Welcome to MyChat</h1>
-                                            <p>A group video calling platform made just for you!</p>
-                                        </div>
-                                
-                                        <form id="form">
-                                            <div class="field-wrapper">
-                                                <style>
-                                                    .form-field-weird{
-                                                        display: none;
-                                                    }
-                                                </style>
-                                                <div class="form-field">
-                                                    <label>Room:</label>
-                                                    <input type="text" name="room" style="text-transform:uppercase"/>
-                                                </div>
-                                                <!-- value="BlockChainConsultation"  -->
-                                                <div class="form-field form-field-weird">
-                                                    <label>Name:</label>
-                                                    <input type="text" name="username" value="{{ user.first_name }}"  style="text-transform:uppercase"/>
-                                                </div>
-                                
-                                                <div class="form-field">
-                                                    <input type="submit" value="Join Stream" />
-                                                </div>
+                            <div class="col-lg-6 button-wrapper">
+                                <button class="button-9" id="consbtn" role="button">Konsultasiyaya qoşul</button>
+                                <div id="consroom" style="display: none;">
+                                    <a href="https://app.videosdk.live/rooms/baconsultation-1/Guest_62aba65208b37db392b0be9a/nytu-jsha-r19w">
+                                        <div class="container room-wrapper">
+                                            <div class="testimonial-author readmore"><h1 class="readmore">Konsultasiya - №1</h1>
                                             </div>
-                                        </form>
-                                    </section>
-                                </main>
+                                            <svg class="arrows">
+                                                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a href="https://app.videosdk.live/rooms/baconsultation-2/Guest_62aba6b008b37db392b0bec7/3x37-9chq-6cn0">
+                                        <div class="container room-wrapper">
+                                            <div class="testimonial-author readmore"><h1 class="readmore">Konsultasiya - №2</h1>
+                                            </div>
+                                            <svg class="arrows">
+                                                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                                <button class="button-9" id="stdbtn" role="button">Dərsə qoşul (ancaq kurs üzüvləri üçün)</button>
+                                <div id="stdroom" style="display: none;">
+                                    <a href="https://app.videosdk.live/rooms/stdroom-1/Guest_62aba70508b37db392b0bf27/1n9m-uznn-8tbq">
+                                        <div class="container room-wrapper">
+                                        <div class="testimonial-author readmore"><h1 class="readmore">Dərs otağı - №1</h1>
+                                        </div>
+                                        <svg class="arrows">
+                                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                        </svg>
+                                    </div>
+                                    </a>
+                                    <a href="https://app.videosdk.live/rooms/stdroom-2/Guest_62aba76308b37db392b0bf71/0lv2-751s-jap8">
+                                        <div class="container room-wrapper">
+                                        <div class="testimonial-author readmore"><h1 class="readmore">Dərs otağı - №2</h1>
+                                        </div>
+                                        <svg class="arrows">
+                                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                        </svg>
+                                    </div>
+                                    </a>
+                                    <a href="https://app.videosdk.live/rooms/stdroom-3/Guest_62aba78208b37db392b0bfa7/0wto-z2jt-srfw">
+                                        <div class="container room-wrapper">
+                                        <div class="testimonial-author readmore"><h1 class="readmore">Dərs otağı - №3</h1>
+                                        </div>
+                                        <svg class="arrows">
+                                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                        </svg>
+                                    </div>
+                                    </a>
+                                    <a href="https://app.videosdk.live/rooms/stdroom-4/Guest_62aba7b308b37db392b0bfda/r1nz-gqt1-3qwp">
+                                        <div class="container room-wrapper">
+                                        <div class="testimonial-author readmore"><h1 class="readmore">Dərs otağı - №4</h1>
+                                        </div>
+                                        <svg class="arrows">
+                                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                        </svg>
+                                    </div>
+                                    </a>
+                                    <a href="https://app.videosdk.live/rooms/stdroom-5/Guest_62aba7e208b37db392b0c051/gojz-4cn3-2waq">
+                                        <div class="container room-wrapper">
+                                        <div class="testimonial-author readmore"><h1 class="readmore">Dərs otağı - №5</h1>
+                                        </div>
+                                        <svg class="arrows">
+                                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                        </svg>
+                                    </div>
+                                    </a>
+                                    <a href="https://app.videosdk.live/rooms/stdroom-6/Guest_62aba80808b37db392b0c0a3/bq26-xta0-u2ue">
+                                        <div class="container room-wrapper">
+                                        <div class="testimonial-author readmore"><h1 class="readmore">Dərs otağı - №6</h1>
+                                        </div>
+                                        <svg class="arrows">
+                                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                        </svg>
+                                    </div>
+                                    </a>
+                                    <a href="https://app.videosdk.live/rooms/stdroom-7/Guest_62aba82108b37db392b0c0da/srib-2qff-djm8">
+                                        <div class="container room-wrapper">
+                                        <div class="testimonial-author readmore"><h1 class="readmore">Dərs otağı - №7</h1>
+                                        </div>
+                                        <svg class="arrows">
+                                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                        </svg>
+                                    </div>
+                                    </a>
+                                    <a href="https://app.videosdk.live/rooms/stdroom-8/Guest_62aba84308b37db392b0c10d/2ggh-ryoj-6kjh">
+                                        <div class="container room-wrapper">
+                                        <div class="testimonial-author readmore"><h1 class="readmore">Dərs otağı - №8</h1>
+                                        </div>
+                                        <svg class="arrows">
+                                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                        </svg>
+                                    </div>
+                                    </a>
+                                    <a href="https://app.videosdk.live/rooms/stdroom-9/Guest_62aba85908b37db392b0c132/v2ux-wxpe-ekuc">
+                                        <div class="container room-wrapper">
+                                        <div class="testimonial-author readmore"><h1 class="readmore">Dərs otağı - №9</h1>
+                                        </div>
+                                        <svg class="arrows">
+                                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                        </svg>
+                                    </div>
+                                    </a>
+                                    <a href="https://app.videosdk.live/rooms/stdroom-10/Guest_62aba87108b37db392b0c171/urtc-1nsp-3y61">
+                                        <div class="container room-wrapper">
+                                        <div class="testimonial-author readmore"><h1 class="readmore">Dərs otağı - №10</h1>
+                                        </div>
+                                        <svg class="arrows">
+                                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                        </svg>
+                                    </div>
+                                    </a>
+                                </div>
+                                <button class="button-9" id="gnrlbtn" role="button">Ümumi otağa qoşul</button>
+                                <div id="gnrlroom" style="display: none;">
+                                    <a href="https://app.videosdk.live/rooms/gnrl-1/Guest_62aba8f208b37db392b0c1c6/kczg-533n-pxdb">
+                                        <div class="container room-wrapper">
+                                            <div class="testimonial-author readmore"><h1 class="readmore">Ümumi otaq - №1</h1>
+                                            </div>
+                                            <svg class="arrows">
+                                                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a href="https://app.videosdk.live/rooms/gnrl-2/Guest_62aba91408b37db392b0c211/qltj-l2tq-w19b">
+                                        <div class="container room-wrapper">
+                                            <div class="testimonial-author readmore"><h1 class="readmore">Ümumi otaq - №2</h1>
+                                            </div>
+                                            <svg class="arrows">
+                                                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <a href="https://app.videosdk.live/rooms/gnrl-3/Guest_62abaa4708b37db392b0c37b/ivq0-1bbq-hknk">
+                                        <div class="container room-wrapper">
+                                            <div class="testimonial-author readmore"><h1 class="readmore">Ümumi otaq - №3</h1>
+                                            </div>
+                                            <svg class="arrows">
+                                                <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                                                <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                                                <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
                             </div> <!-- end of col -->
                             <div class="col-lg-6">
                                 <div class="text-container">
-                                    <h3>List Building Is Easier Than Ever</h3>
-                                    <p>It's very easy to start using Tivo. You just need to fill out and submit the <a class="blue page-scroll" href="sign-up.html">Sign Up Form</a> and you will receive access to the app and all of its features in no more than 24h.</p>
+                                    <h3>Blockchain Kabinetdə yenisən?</h3>
                                     <ul class="list-unstyled li-space-lg">
                                         <li class="media">
                                             <i class="fas fa-square"></i>
-                                            <div class="media-body">Create and embed on websites newsletter sign up forms</div>
+                                            <div class="media-body"> <p> <span class="boldintxt" >Konsultasiya</span>  xidmətindən yararlanmaq üçün əvvəlcədən tədris mərkəzinin əməkdaşları ilə əlaqə saxlanılıb şərtlər ilə tanış olmalı və uyğun vaxt təyin olmalıdır. Daha sonra konsultasiya otağına <span class="boldintxt" >konsultantın icazəsi ilə</span> daxil ola bilərsiniz.</p> </div>
                                         </li>
                                         <li class="media">
                                             <i class="fas fa-square"></i>
-                                            <div class="media-body">Manage forms and landing pages for your services</div>
+                                            <div class="media-body"> <p> <span class="boldintxt" >Dərs</span>  otaqları yalnız kursa üzv olan öyrəncilər üçün nəzərdə tutulub. Əgər kursa üzüvsünüzsə cədvəlinizə və otaq nömrəsinə uyğun vaxtda dərsə qoşulub <span class="boldintxt" >müəllmin təsdiqini</span> gözləyin.</p> </div>
                                         </li>
                                         <li class="media">
                                             <i class="fas fa-square"></i>
-                                            <div class="media-body">Add and remove subscribers using the control panel</div>
+                                            <div class="media-body"> <p> <span class="boldintxt" >Ümumi otaq</span> ictimai istifadə üçün nəzərdə tutulub. Otğa qoşulmaq üçün hər hansı <span class="boldintxt" > icazə tələb olunmasada </span> otğa qoşulmazdan əvvəl təqdim olunan <span class="boldintxt" > qaydalarla</span> tanış olmağınız və əməl etməyiniz tələb olunur.</p> </div>
                                         </li>
                                     </ul>
                                     <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a> -->
