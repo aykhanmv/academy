@@ -18,7 +18,7 @@ SECRET_KEY = env('secret_key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['157.245.73.39', 'www.blokchainacademy.az', 'blokchainacademy.az', ]
 
 
 # Application definition
