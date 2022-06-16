@@ -1,22 +1,29 @@
-let form = document.getElementById('form')
+const targetDiv = document.getElementById("consroom");
+const btn = document.getElementById("consbtn");
+btn.onclick = function () {
+  if (targetDiv.style.display !== "none") {
+    targetDiv.style.display = "none";
+  } else {
+    targetDiv.style.display = "block";
+  }
+};
 
-let handleSubmit = async (e) => {
-    e.preventDefault()
-    let room = e.target.room.value.toUpperCase()
-    let name = e.target.username.value
+const targetDiv1 = document.getElementById("stdroom");
+const btn1 = document.getElementById("stdbtn");
+btn1.onclick = function () {
+  if (targetDiv1.style.display !== "none") {
+    targetDiv1.style.display = "none";
+  } else {
+    targetDiv1.style.display = "block";
+  }
+};
 
-    let response = await fetch(`/login/base/get_token/?channel=${room}`)
-    let data = await response.json()
-
-    let UID = data.uid
-    let token = data.token
-    sessionStorage.setItem('UID', UID)
-    sessionStorage.setItem('token', token)
-    sessionStorage.setItem('room', room)
-    sessionStorage.setItem('name', name)
-
-
-    window.open('/login/base/room/', '_self')
-}
-
-form.addEventListener('submit', handleSubmit)
+const targetDiv2 = document.getElementById("gnrlroom");
+const btn2 = document.getElementById("gnrlbtn");
+btn2.onclick = function () {
+  if (targetDiv2.style.display !== "none") {
+    targetDiv2.style.display = "none";
+  } else {
+    targetDiv2.style.display = "block";
+  }
+};
