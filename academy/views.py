@@ -21,6 +21,8 @@ def entrytocrypto(request):
 def riskmanagement(request):
     return render(request, 'riskmanagement.html', {'title': 'Blockchain Academy'})
 
+def ticaretstrategy(request):
+    return render(request, 'ticaretstrategy.html', {'title': 'Blockchain Academy'})
 
 # @login_required
 # def base(request):

@@ -6,12 +6,12 @@ from django.contrib import admin
 from django.urls import path
 
 
-from .views import academy, technical, fundamental, priceaction, entrytocrypto, riskmanagement
+from .views import academy, technical, fundamental, priceaction, entrytocrypto, riskmanagement, ticaretstrategy
 from users import views as users_views
 from base import views as base_views 
 
 urlpatterns = [
-    path('j898md398md3n/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', academy, name='academy'),
 
     path('technical/', technical, name='technical'),
@@ -19,11 +19,13 @@ urlpatterns = [
     path('priceaction/', priceaction, name='priceaction'),
     path('entrytocrypto/', entrytocrypto, name='entrytocrypto'),
     path('riskmanagement/', riskmanagement, name='riskmanagement'),
+    path('ticaretstrategy/', ticaretstrategy, name='ticaretstrategy'),
 
     path('register/', users_views.register, name='register'),
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('base/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('login/base/', base_views.lobby, name='base'),
+    path('login/base/room/', base_views.room, name='room'),
     path('logout/', auth_views.LogoutView.as_view(template_name='index.html'), name='logout'),
 ]
 
