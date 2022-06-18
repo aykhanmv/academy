@@ -8,8 +8,8 @@
     }
 </style>
 
-<!-- Customers -->
-<div class="slider-1">
+<!-- Sponsorlar -->
+<!-- <div class="slider-1">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -47,10 +47,9 @@
 html {
     scroll-behavior: smooth !important;
 }   
-</style>
+</style> -->
 
 <!-- CoinMarketCap -->
-
 <style>
     .coin-marquee-header{
         display: none !important;
@@ -71,598 +70,461 @@ html {
 <div id="courses"></div>
 <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="1,1027,825,2010,1958,52,3890,6535,7102" currency="USD" theme="light" transparent="true" show-symbol-logo="true"></div>
 
-<!-- What do we teach? -->
-
+<!-- Tədris paketləri -->
 <div class="container-fluid cardarea">
-        <div style="text-align: center; margin-bottom: 50px;">
-            <h2 class="h2-heading">Nəyi tədirs edirik?</h2>
-        </div>
-        <div class="mobileres container">
-            <div class="cardback">
-                <div class="card1">
-                    <h4 class="card-title" style="color: #000000b7;">Texniki analiz</h4>
-                    <p>Bu analiz növü qrafikdə qiymətin keçmiş hərəkətliliyinə baxaraq gələcəkdə baş verə biləcək qiymət dalğalanmasını hesablayır.</p>
-                    <a href="{% url 'technical' %}">
-                        <div class="container arrowdiv arrowweird">
-                            <div class="testimonial-author readmore"><h1 class="readmore">Ətraflı</h1>
-                            </div>
-                            <svg class="arrows">
-                                <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                                <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                                <path class="a3" d="M0 40 L30 72 L60 40"></path>
-                            </svg>
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h2 class="h2-heading">Nəyi tədirs edirik?</h2>
+    </div>
+    <div class="mobileres container">
+        <div class="cardback">
+            <div class="card1">
+                <h4 class="card-title" style="color: #000000b7;">Kriptovalyutaya giriş</h4>
+                <a href="{% url 'entrytocrypto' %}">
+                    <div class="container arrowdiv">
+                        <div class="testimonial-author readmore"><h1 class="readmore">Ətraflı</h1>
                         </div>
-                    </a>
-                </div>
-                <div class="card1">
-                    <h4 class="card-title" style="color: #000000b7;">Fundamental analiz</h4>
-                    <p>Bu analiz növü kriptovalyutaların əsas atributlarını və layihəsini öyrənən analiz növüdür</p>
-                    <a href="{% url 'fundamental' %}">
-                        <div class="container arrowdiv arrowweird">
-                            <div class="testimonial-author readmore">
-                                <h1 class="readmore">Ətraflı</h1>
-                            </div>
-                            <svg class="arrows">
-                                <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                                <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                                <path class="a3" d="M0 40 L30 72 L60 40"></path>
-                            </svg>
+                        <svg class="arrows">
+                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="card1">
+                <h4 class="card-title" style="color: #000000b7;">Fundamental analiz</h4>
+                <a href="{% url 'fundamental' %}">
+                    <div class="container arrowdiv">
+                        <div class="testimonial-author readmore">
+                            <h1 class="readmore">Ətraflı</h1>
                         </div>
-                    </a>
-                </div>
-                <div class="card1">
-                    <h4 class="card-title" style="color: #000000b7;">Price action</h4>
-                    <p>Bu analiz növü smart money konseptinə dayanan və market maker'lərin izlərini təqib edərək qazanmaqda kömək edən analiz metodudur.</p>
-                    <a href="{% url 'priceaction' %}">
-                        <div class="container arrowdiv">
-                            <div class="testimonial-author readmore"><h1 class="readmore">Ətraflı</h1>
-                            </div>
-                            <svg class="arrows">
-                                <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                                <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                                <path class="a3" d="M0 40 L30 72 L60 40"></path>
-                            </svg>
+                        <svg class="arrows">
+                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="card1">
+                <h4 class="card-title" style="color: #000000b7;">Texniki analiz</h4>
+                <a href="{% url 'technical' %}">
+                    <div class="container arrowdiv">
+                        <div class="testimonial-author readmore"><h1 class="readmore">Ətraflı</h1>
                         </div>
-                    </a>
-                </div>
-                <div class="card1">
-                    <h4 class="card-title" style="color: #000000b7;">Riskin və balansın idarə edilməsi</h4>
-                    <p>Riskin və balansın düzgün idarə edilməsi uğurlu ticarətin başlanğıcıdır.</p>
-                    <a href="{% url 'riskmanagement' %}">
-                        <div class="container arrowdiv arrowweird1">
-                            <div class="testimonial-author readmore"><h1 class="readmore">Ətraflı</h1>
-                            </div>
-                            <svg class="arrows">
-                                <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                                <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                                <path class="a3" d="M0 40 L30 72 L60 40"></path>
-                            </svg>
+                        <svg class="arrows">
+                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card1">
+                <h4 class="card-title" style="color: #000000b7;">Price action</h4>
+                <a href="{% url 'priceaction' %}">
+                    <div class="container arrowdiv arrowweird">
+                        <div class="testimonial-author readmore"><h1 class="readmore">Ətraflı</h1>
                         </div>
-                    </a>
-                </div>
-                <div class="card1">
-                    <h4 class="card-title" style="color: #000000b7;">Ticarət strategiyası və psixologiyası</h4>
-                    <p>Düzgün ticarət strategiyası və psixologiyası bir ticarətçinin maliyyə bazarlarında doğru qərar verməsini təmin edir.</p>
-                    <a href="{% url 'entrytocrypto' %}">
-                        <div class="container arrowdiv arrowweird">
-                            <div class="testimonial-author readmore"><h1 class="readmore">Ətraflı</h1>
-                            </div>
-                            <svg class="arrows">
-                                <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                                <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                                <path class="a3" d="M0 40 L30 72 L60 40"></path>
-                            </svg>
+                        <svg class="arrows">
+                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="card1">
+                <h4 class="card-title" style="color: #000000b7;">Riskin və balansın idarə edilməsi</h4>
+                <a href="{% url 'riskmanagement' %}">
+                    <div class="container arrowdiv">
+                        <div class="testimonial-author readmore"><h1 class="readmore">Ətraflı</h1>
                         </div>
-                    </a>
-                </div>
+                        <svg class="arrows">
+                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="card1">
+                <h4 class="card-title" style="color: #000000b7;">Ticarət strategiyası və psixologiyası</h4>
+                <a href="{% url 'entrytocrypto' %}">
+                    <div class="container arrowdiv">
+                        <div class="testimonial-author readmore"><h1 class="readmore">Ətraflı</h1>
+                        </div>
+                        <svg class="arrows">
+                            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                        </svg>
+                    </div>
+                </a>
             </div>
         </div>
+    </div>
 </div>
 
-<!-- Description -->
-<div class="cards-1 methods">
+<!-- Tədris metodları -->
+<div id="methods" class="cards-2">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="h2-heading">Tədris metodlarımız</h2>
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
+            </div> 
+        </div> 
         <div class="row">
             <div class="col-lg-12">
-
-                <!-- Card -->
-                <div class="card methods">
-                    <div class="card-image">
-                        <img class="img-fluid" style="width: 90px;" src="{% static 'images/offlineblue.png' %}" alt="alternative">
+                <div class="card" id="methodcard" >
+                    <div class="card-body" id="metod-body">
+                        <div class="card-image" >
+                            <img class="img-fluid" style="width: 100px;" src="{% static 'images/ənənəvi.png' %}" alt="alternative">
+                        </div>
+                        <div class="card-body" id="metod-body">
+                            <h4 class="card-title" style="color: #000000b7; padding: 7px; margin: 0px !important; font-size: 22px !important;">Ənəvi tədris</h4>
+                            <p>Ənənəvi tədris qrup və individual şəkildə olmaqla aparılır.</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h4 class="card-title" style="color: #000000b7;">Ənəvi tədris</h4>
-                        <p>Bu cür tədirs metodunda tələbələr ənəvi yola ilə dərsdə iştirak edərək kripto biliklər qazanır.</p>
-                    </div>
-                </div>
-                <!-- end of card -->
-
-                <!-- Card -->
-                <div class="card methods">
-                    <div class="card-image">
-                        <img class="img-fluid" style="width: 100px;" src="{% static 'images/onlineblue.png' %}" alt="alternative">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title" style="color: #000000b7;">Online tədris</h4>
-                        <p>Bu cür tədirs metodunda tələbələr ənəvi yola ilə dərsdə iştirak edərək kripto biliklər qazanır.</p>
-                    </div>
-                </div>
-                <!-- end of card -->
-
-                <!-- Card -->
-                <div class="card methods">
-                    <div class="card-image">
-                        <img class="img-fluid" style="width: 80px;" src="{% static 'images/elearningblue.png' %}" alt="alternative">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title" style="color: #000000b7;">E-tədris</h4>
-                        <p>Bu cür tədirs metodunda tələbələr ənəvi yola ilə dərsdə iştirak edərək kripto biliklər qazanır.</p>
-                    </div>
-                </div>
-                <!-- end of card -->
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-</div> <!-- end of cards-1 -->
-<!-- end of description -->
-    
-<!-- Details Lightboxes -->
-    <!-- Details Lightbox 1 -->
-	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="container">
-            <div class="row">
-                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                <div class="col-lg-8">
-                    <div class="image-container">
-                        <img class="img-fluid" src="{% static 'images/details-lightbox.png' %}" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <h3>List Building</h3>
-                    <hr>
-                    <h5>Core service</h5>
-                    <p>It's very easy to start using Tivo. You just need to fill out and submit the Sign Up Form and you will receive access to the app.</p>
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">List building framework</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Easy database browsing</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">User administration</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Automate user signup</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Quick formatting tools</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Fast email checking</div>
-                        </li>
-                    </ul>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of details lightbox 1 -->
-
-    <!-- Details Lightbox 2 -->
-	<div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="container">
-            <div class="row">
-                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                <div class="col-lg-8">
-                    <div class="image-container">
-                        <img class="img-fluid" src="{% static 'images/details-lightbox.png' %}" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <h3>Campaign Monitoring</h3>
-                    <hr>
-                    <h5>Core service</h5>
-                    <p>It's very easy to start using Tivo. You just need to fill out and submit the Sign Up Form and you will receive access to the app.</p>
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">List building framework</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Easy database browsing</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">User administration</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Automate user signup</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Quick formatting tools</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Fast email checking</div>
-                        </li>
-                    </ul>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of details lightbox 2 -->
-
-    <!-- Details Lightbox 3 -->
-	<div id="details-lightbox-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="container">
-            <div class="row">
-                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                <div class="col-lg-8">
-                    <div class="image-container">
-                        <img class="img-fluid" src="{% static 'images/details-lightbox.png' %}" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <h3>Analytics Tools</h3>
-                    <hr>
-                    <h5>Core service</h5>
-                    <p>It's very easy to start using Tivo. You just need to fill out and submit the Sign Up Form and you will receive access to the app.</p>
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">List building framework</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Easy database browsing</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">User administration</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Automate user signup</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Quick formatting tools</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Fast email checking</div>
-                        </li>
-                    </ul>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of details lightbox 3 -->
-    <!-- end of details lightboxes -->
-
-
-    <!-- Details -->
-    <div id="details" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>Now Is The Time To Upgrade Your Marketing Solution</h2>
-                        <p>Target the right customers for your business with the help of Tivo's patented segmentation technology and deploy efficient marketing campaigns. Keep your customers happy and loyal.</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Understand customers and meet their requirements</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Targeted client base with Tivo's efficient technology</div>
-                            </li>
-                        </ul>
-                        <a class="btn-solid-reg page-scroll" href="#">SIGN UP</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="{% static 'images/details.png' %}" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of details -->
-
-    <!-- Book -->
-    <div id="details book" class="basic-1 book">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid kriptoinvest" src="{% static 'images/kriptoinvest.png' %}" alt="alternative">
-                    </div> 
                 </div> 
-                <div class="col-lg-6 booktext">
-                    <div class="text-container">
-                        <h2>Now Is The Time To Upgrade Your Marketing Solution</h2>
-                        <p>Target the right customers for your business with the help of Tivo's patented segmentation technology and deploy efficient marketing campaigns. Keep your customers happy and loyal.</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Understand customers and meet their requirements</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Targeted client base with Tivo's efficient technology</div>
-                            </li>
-                        </ul>
-                        <a class="btn-solid-reg page-scroll" href="#">SIGN UP</a>
-                    </div> 
+                <div class="card" id="methodcard">
+                    <div class="card-body" id="metod-body">
+                        <div class="card-image" >
+                            <img class="img-fluid" style="width: 100px;" src="{% static 'images/online.png' %}" alt="alternative">
+                        </div>
+                        <div class="card-body" id="metod-body">
+                            <h4 class="card-title" style="color: #000000b7; padding: 7px; margin: 0px !important; font-size: 22px !important;">Online tədris</h4>
+                            <p>Onilen tədris həm qrup həm individual şəkildə mümkündür və Blockchain Cabinet üzərindən aparılır.</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="card" id="methodcard">
+                    <div class="card-body" id="metod-body">
+                        <div class="card-image">
+                            <img class="img-fluid" style="width: 100px;" src="{% static 'images/e-learning.png' %}" alt="alternative">
+                        </div>
+                        <div class="card-body" id="metod-body">
+                            <h4 class="card-title" style="color: #000000b7; padding: 7px; margin: 0px !important; font-size: 22px !important;">E-tədris</h4>
+                            <p>E-learning tezliklə istifadəyə veriləcək və istifadəçilər Blockchain Cabinet üzərdindən dərsləri video material kimi ala biləcəklər.</p>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div> 
+    </div>
+</div>
+
+<!-- Haqqımızda -->
+<div id="details" class="basic-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <h2>Now Is The Time To Upgrade Your Marketing Solution</h2>
+                    <p>Target the right customers for your business with the help of Tivo's patented segmentation technology and deploy efficient marketing campaigns. Keep your customers happy and loyal.</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Understand customers and meet their requirements</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Targeted client base with Tivo's efficient technology</div>
+                        </li>
+                    </ul>
+                    <a class="btn-solid-reg page-scroll" href="#">SIGN UP</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="{% static 'images/details.png' %}" alt="alternative">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Kitab -->
+<div id="details book" class="basic-1 book">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid kriptoinvest" src="{% static 'images/kriptoinvest.png' %}" alt="alternative">
+                </div> 
+            </div> 
+            <div class="col-lg-6 booktext">
+                <div class="text-container">
+                    <h2>Kripto Invest</h2>
+                    <p>Target the right customers for your business with the help of Tivo's patented segmentation technology and deploy efficient marketing campaigns. Keep your customers happy and loyal.</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Understand customers and meet their requirements</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Targeted client base with Tivo's efficient technology</div>
+                        </li>
+                    </ul>
+                    <a class="btn-solid-reg page-scroll" href="#">SIGN UP</a>
                 </div> 
             </div> 
         </div> 
     </div> 
+</div> 
 
-    <!-- Video -->
-    <!-- <div id="video" class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="image-container">
-                        <div class="video-wrapper">
-                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
-                                <img class="img-fluid" src="{% static 'images/video-image.png' %}" alt="alternative">
-                                <span class="video-play-button">
-                                    <span></span>
-                                </span>
-                            </a>
-                        </div> 
+<!-- Video -->
+<!-- <div id="video" class="basic-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="image-container">
+                    <div class="video-wrapper">
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
+                            <img class="img-fluid" src="{% static 'images/video-image.png' %}" alt="alternative">
+                            <span class="video-play-button">
+                                <span></span>
+                            </span>
+                        </a>
                     </div> 
-                    <div class="p-heading">What better way to show off Tivo marketing automation saas app than presenting you some great situations of each module and tool available to users in a video</div>        
+                </div> 
+                <div class="p-heading">What better way to show off Tivo marketing automation saas app than presenting you some great situations of each module and tool available to users in a video</div>        
+            </div> 
+        </div> 
+    </div> 
+</div>  -->
+
+<!-- Tədris paketləri -->
+<div id="pricing" class="cards-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="h2-heading">Tədris paketlərimiz</h2>
+            </div> 
+        </div> 
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card pricingcards">
+                    <div class="card-body">
+                        <div class="price"><span class="value">Basic</span></div>
+                        <div class="frequency" class="cryptologodiv">150&nbsp;<span class="currency">AZN</span>/ay</div>
+                        <div class="divider"></div>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-check"></i><div class="media-body">Price action/Texniki analiz</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i><div class="media-body">Kripto/Forex fundamental analiz</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i><div class="media-body">6 nəfərlik qrup şəklində</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-times"></i><div class="media-body">3-cü analiz metodu</div>
+                            </li>
+                        </ul>
+                        <div class="button-wrapper">
+                            <a class="btn-solid-reg page-scroll" href="#">Əlaqə saxlayın</a>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="card pricingcards">
+                    <div class="card-body">
+                        <div class="price"><span class="value">İndividual</span></div>
+                        <div class="frequency" class="cryptologodiv">300&nbsp;<span class="currency">AZN</span>/ay</div>
+                        <div class="divider"></div>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-check"></i><div class="media-body">Price action/Texniki analiz</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i><div class="media-body">Kripto/Forex fundamental analiz</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i><div class="media-body">Fərdi şəkildə</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-times"></i><div class="media-body">3-cü analiz metodu</div>
+                            </li>
+                        </ul>
+                        <div class="button-wrapper">
+                            <a class="btn-solid-reg page-scroll" href="#">Əlaqə saxlayın</a>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="card pricingcards">
+                    <div class="card-body">
+                        <div class="price"><span class="value">İndividual Pro</span></div>
+                        <div class="frequency" class="cryptologodiv">500&nbsp;<span class="currency">AZN</span>/ay</div>
+                        <div class="divider"></div>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-check"></i><div class="media-body">Price action</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i><div class="media-body">Texniki analiz</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i><div class="media-body">Kripto/Forex fundamental analiz</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-check"></i><div class="media-body">Fərdi şəkildə</div>
+                            </li>
+                        </ul>
+                        <div class="button-wrapper">
+                            <a class="btn-solid-reg page-scroll" href="#">Əlaqə saxlayın</a>
+                        </div>
+                    </div>
                 </div> 
             </div> 
         </div> 
-    </div>  -->
-
-    <!-- Pricing -->
-    <div id="pricing" class="cards-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Tədris paketlərimiz</h2>
-                </div> 
-            </div> 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card pricingcards">
-                        <div class="card-body">
-                            <div class="price"><span class="value">Basic</span></div>
-                            <!-- <div class="price"><span class="value">39.99</span></div> -->
-                            <div class="frequency" class="cryptologodiv">150&nbsp;<span class="currency">AZN</span>/ay</div>
-                            <div class="divider"></div>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">Price action/Texniki analiz</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">Kripto/Forex fundamental analiz</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">6 nəfərlik qrup şəklində</div>
-                                </li>
-                            </ul>
-                            <div class="button-wrapper pricebutton">
-                                <a class="btn-solid-reg page-scroll" href="#">Əlaqə saxlayın</a>
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div class="card pricingcards">
-                        <div class="card-body">
-                            <div class="price"><span class="value">İndividual</span></div>
-                            <div class="frequency" class="cryptologodiv">300&nbsp;<span class="currency">AZN</span>/ay</div>
-                            <div class="divider"></div>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">Price action/Texniki analiz</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">Kripto/Forex fundamental analiz</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">Fərdi şəkildə</div>
-                                </li>
-                            </ul>
-                            <div class="button-wrapper pricebutton">
-                                <a class="btn-solid-reg page-scroll" href="#">Əlaqə saxlayın</a>
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div class="card pricingcards">
-                        <div class="card-body">
-                            <div class="price"><span class="value">İndividual Pro</span></div>
-                            <div class="frequency" class="cryptologodiv">500&nbsp;<span class="currency">AZN</span>/ay</div>
-                            <div class="divider"></div>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">Price action</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">Texniki analiz</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">Kripto/Forex fundamental analiz</div>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-check"></i><div class="media-body">Fərdi şəkildə</div>
-                                </li>
-                            </ul>
-                            <div class="button-wrapper">
-                                <a class="btn-solid-reg page-scroll" href="#">Əlaqə saxlayın</a>
-                            </div>
-                        </div>
-                    </div> 
-
-
-                </div> 
-            </div> 
-        </div>
     </div>
+</div>
     
 
-    <!-- Features -->
-    <div id="features" class="tabs">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Komandamız</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="slider-2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">      
-                                
-                                <!-- Text Slider -->
-                                <div class="slider-container">
-                                    <div class="swiper-container text-slider">
-                                        <div class="swiper-wrapper">
-                                            
-                                            <!-- Slide -->
-                                            <div class="swiper-slide">
-                                                <div class="image-wrapper">
-                                                    <img class="img-fluid" src="{% static 'images/testimonial-1.jpg' %}" alt="alternative">
-                                                </div> <!-- end of image-wrapper -->
-                                                <div class="text-wrapper">
-                                                    <div class="testimonial-text">I started to use Tivo with the free trial about a year ago and never stopped since then. It does all the repeating marketing tasks and allows me to focus on core development activities like new product research and design. I love it and recommend it to everyone.</div>
-                                                    <div class="testimonial-author">Jude Thorn - Online Marketer</div>
-                                                </div> <!-- end of text-wrapper -->
-                                            </div> <!-- end of swiper-slide -->
-                                            <!-- end of slide -->
-            
-                                            <!-- Slide -->
-                                            <div class="swiper-slide">
-                                                <div class="image-wrapper">
-                                                    <img class="img-fluid" src="{% static 'images/testimonial-2.jpg' %}" alt="alternative">
-                                                </div> <!-- end of image-wrapper -->
-                                                <div class="text-wrapper">
-                                                    <div class="testimonial-text">Awesome features for the money. I never thought such a low ammount of money would bring me so many leads per month. Before Tivo I used the services of an agency which cost 10x more and delivered far less. Highly recommended to marketers focused on results.</div>
-                                                    <div class="testimonial-author">Roy Smith - Developer</div>
-                                                </div> <!-- end of text-wrapper -->
-                                            </div> <!-- end of swiper-slide -->
-                                            <!-- end of slide -->
-            
-                                            <!-- Slide -->
-                                            <div class="swiper-slide">
-                                                <div class="image-wrapper">
-                                                    <img class="img-fluid" src="{% static 'images/testimonial-3.jpg' %}" alt="alternative">
-                                                </div> <!-- end of image-wrapper -->
-                                                <div class="text-wrapper">
-                                                    <div class="testimonial-text">Tivo is the best marketing automation app for small and medium sized business. It understands the mindset of young entrepreneurs and provides the necessary data for wise marketing decisions. Just give it a try and you will definitely not regret spending your time.</div>
-                                                    <div class="testimonial-author">Marsha Singer - Online Marketer</div>
-                                                </div> <!-- end of text-wrapper -->
-                                            </div> <!-- end of swiper-slide -->
-                                            <!-- end of slide -->
-            
-                                            <!-- Slide -->
-                                            <div class="swiper-slide">
-                                                <div class="image-wrapper">
-                                                    <img class="img-fluid" src="{% static 'images/testimonial-4.jpg' %}" alt="alternative">
-                                                </div> <!-- end of image-wrapper -->
-                                                <div class="text-wrapper">
-                                                    <div class="testimonial-text">Tivo is one of the greatest marketing automation apps out there. I especially love the Reporting Tools module because it gives me such a great amount of information based on little amounts of input gathered in just few weeks of light weight usage. Recommended!</div>
-                                                    <div class="testimonial-author">Ronda Louis - Online Marketer</div>
-                                                </div> <!-- end of text-wrapper -->
-                                            </div> <!-- end of swiper-slide -->
-                                            <!-- end of slide -->
-            
-                                        </div> <!-- end of swiper-wrapper -->
+<!-- Komandamız -->
+<div id="features" class="tabs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="h2-heading">Komandamız</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="slider-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">      
+                            
+                            <div class="slider-container">
+                                <div class="swiper-container text-slider">
+                                    <div class="swiper-wrapper">
                                         
-                                        <!-- Add Arrows -->
-                                        <div class="swiper-button-next"></div>
-                                        <div class="swiper-button-prev"></div>
-                                        <!-- end of add arrows -->
-            
-                                    </div> <!-- end of swiper-container -->
-                                </div> <!-- end of slider-container -->
-                                <!-- end of text slider -->
-            
-                            </div> <!-- end of col -->
-                        </div> <!-- end of row -->
-                    </div> <!-- end of container -->
-                </div> <!-- end of slider-2 -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of tabs -->
-    <!-- end of features -->
+                                        <div class="swiper-slide">
+                                            <div class="image-wrapper">
+                                                <img class="img-fluid" src="{% static 'images/testimonial-1.jpg' %}" alt="alternative">
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <div class="testimonial-text">I started to use Tivo with the free trial about a year ago and never stopped since then. It does all the repeating marketing tasks and allows me to focus on core development activities like new product research and design. I love it and recommend it to everyone.</div>
+                                                <div class="testimonial-author">Jude Thorn - Online Marketer</div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="swiper-slide">
+                                            <div class="image-wrapper">
+                                                <img class="img-fluid" src="{% static 'images/testimonial-2.jpg' %}" alt="alternative">
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <div class="testimonial-text">Awesome features for the money. I never thought such a low ammount of money would bring me so many leads per month. Before Tivo I used the services of an agency which cost 10x more and delivered far less. Highly recommended to marketers focused on results.</div>
+                                                <div class="testimonial-author">Roy Smith - Developer</div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="swiper-slide">
+                                            <div class="image-wrapper">
+                                                <img class="img-fluid" src="{% static 'images/testimonial-3.jpg' %}" alt="alternative">
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <div class="testimonial-text">Tivo is the best marketing automation app for small and medium sized business. It understands the mindset of young entrepreneurs and provides the necessary data for wise marketing decisions. Just give it a try and you will definitely not regret spending your time.</div>
+                                                <div class="testimonial-author">Marsha Singer - Online Marketer</div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="swiper-slide">
+                                            <div class="image-wrapper">
+                                                <img class="img-fluid" src="{% static 'images/testimonial-4.jpg' %}" alt="alternative">
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <div class="testimonial-text">Tivo is one of the greatest marketing automation apps out there. I especially love the Reporting Tools module because it gives me such a great amount of information based on little amounts of input gathered in just few weeks of light weight usage. Recommended!</div>
+                                                <div class="testimonial-author">Ronda Louis - Online Marketer</div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
 
-    <!-- Newsletter -->
-    <div class="form">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container">
-                        <div class="above-heading">NEWSLETTER</div>
-                        <h2>Stay Updated With The Latest News To Get More Qualified Leads</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                        <!-- Newsletter Form -->
-                        <form id="newsletterForm" data-toggle="validator" data-focus="false">
-                            <div class="form-group">
-                                <input type="email" class="form-control-input" id="nemail" required>
-                                <label class="label-control" for="nemail">Email</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group checkbox">
-                                <input type="checkbox" id="nterms" value="Agreed-to-Terms" required>I've read and agree to Tivo's written <a href="#">Privacy Policy</a> and <a href="#">Terms Conditions</a> 
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">SUBSCRIBE</button>
-                            </div>
-                            <div class="form-message">
-                                <div id="nmsgSubmit" class="h3 text-center hidden"></div>
-                            </div>
-                        </form>
-                        <!-- end of newsletter form -->
+<!-- Abunə ol -->
+<div class="form">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-container" id="abune">
+                    <h2>Baş tutacaq eventlərdən əvvəlcədən xəbərdar tut</h2>
+                    <form id="newsletterForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="nemail" required>
+                            <label class="label-control" for="nemail">E-poçt adresi</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <!-- <div class="form-group checkbox">
+                            <input type="checkbox" id="nterms" value="Agreed-to-Terms" required>I've read and agree to Tivo's written <a href="#">Privacy Policy</a> and <a href="#">Terms Conditions</a> 
+                            <div class="help-block with-errors"></div>
+                        </div> -->
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">Abunə ol</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="nmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                
 
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="icon-container">
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of col -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form -->
-    <!-- end of newsletter -->
-
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="icon-container">
+                    <span class="fa-stack">
+                        <a href="#https://www.facebook.com/blockchainacademy.az">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <!-- <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span> -->
+                    <!-- <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                        </a>
+                    </span> -->
+                    <span class="fa-stack">
+                        <a href="#https://www.instagram.com/blockchainacademy.az/">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-instagram fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#https://wa.me/994504107075">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-whatsapp fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock content %}
