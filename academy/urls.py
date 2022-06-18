@@ -11,7 +11,7 @@ from users import views as users_views
 from base import views as base_views 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('j898md398md3n/', admin.site.urls),
     path('', academy, name='academy'),
 
     path('technical/', technical, name='technical'),
