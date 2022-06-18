@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-iis98+1ruxamj@30%ij(p463ndn7qtv*=6wjo+u#4)zdhx(5g7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['157.245.73.39', 'blockchainacademy.az', 'www.blockchainacademy.az', ]
 
@@ -65,24 +65,24 @@ WSGI_APPLICATION = 'academy.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-if DEBUG:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
+# if DEBUG:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+#     }
+# else:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'academydb',
+        'USER': 'academy_admin',
+        'PASSWORD': 'Aykhan@6446',
+        'HOST': 'localhost',
+        'PORT': '',
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'academydb',
-            'USER': 'academy_admin',
-            'PASSWORD': 'Aykhan@6446',
-            'HOST': 'localhost',
-            'PORT': '',
-        }
-    }
+}
 
 
 
