@@ -24,6 +24,5 @@ def riskmanagement(request):
 def ticaretstrategy(request):
     return render(request, 'ticaretstrategy.html', {'title': 'Blockchain Academy'})
 
-# @login_required
-# def base(request):
-#     return render(request, 'base.html')
+def contact(request):
+    return render(request, 'contact.html', {'title': 'Blockchain Academy'})
