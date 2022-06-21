@@ -1,3 +1,11 @@
+/* General styling */
+.boldintxt{
+    font-weight: 700;
+}
+.iinhome{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 /* chatting widget */
 .tawk-min-container, .tawk-button{
 	padding-left: 100px !important;
