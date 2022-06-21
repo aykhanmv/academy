@@ -3,8 +3,8 @@
     font-weight: 700;
 }
 .iinhome{
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
 }
 /* chatting widget */
 .tawk-min-container, .tawk-button{
