@@ -6,6 +6,12 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+.dropdown-menu{
+	border-style: solid !important;
+	border-color: rgba(255, 255, 255, 0.185) !important;
+	width: 170px !important;
+	border-width: thin !important;
+}
 .seminar{
 	border-style: solid;
 	border-width: 10px;

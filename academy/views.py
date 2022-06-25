@@ -26,3 +26,8 @@ def ticaretstrategy(request):
 
 def contact(request):
     return render(request, 'contact.html', {'title': 'Blockchain Academy'})
+
+def faq(request):
+    return render(request, 'faq.html', {'title': 'Blockchain Academy'})
+
+

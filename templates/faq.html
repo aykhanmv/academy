@@ -1,0 +1,104 @@
+{% load static %}
+{% include "head.html" %}
+{% include "header.html" %}
+<style>
+    .header, .header-frame{
+        display: none;
+    }
+    .lougoutcabinet{
+        display: none;
+    }
+</style>
+<body>
+
+<header id="header" class="ex-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>FAQ</h1>
+            </div> 
+        </div> 
+    </div> 
+</header> 
+
+
+
+
+<div class="ex-basic-1">
+    <div class="container"> 
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumbs">
+                    <a href="{% url 'academy' %}">Home</a><i class="fa fa-angle-double-right"></i><span>FAQ</span>
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+</div> 
+
+
+
+<div class="form">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-container" id="abune">
+                    <h2>Yeniliklərdən və kampaniyalarımızdan əvvəlcədən xəbər tut</h2>
+                    <form id="newsletterForm" data-toggle="validator" data-focus="false">
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="nemail" required>
+                            <label class="label-control" for="nemail">E-poçt adresi</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button">Abunə ol</button>
+                        </div>
+                        <div class="form-message">
+                            <div id="nmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="icon-container">
+                    <span class="fa-stack">
+                        <a href="#https://www.facebook.com/blockchainacademy.az">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <!-- <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span> -->
+                    <!-- <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                        </a>
+                    </span> -->
+                    <span class="fa-stack">
+                        <a href="#https://www.instagram.com/blockchainacademy.az/">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-instagram fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#https://wa.me/994504107075">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-whatsapp fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+{% include "scripts.html" %}
+{% include "footer.html" %}
