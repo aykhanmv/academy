@@ -6,7 +6,7 @@ from django.contrib import admin
 from django.urls import path
 
 
-from .views import academy, technical, fundamental, priceaction, entrytocrypto, riskmanagement, ticaretstrategy, contact
+from .views import academy, technical, fundamental, priceaction, entrytocrypto, riskmanagement, ticaretstrategy, contact, faq
 from users import views as users_views
 from base import views as base_views 
 
@@ -20,6 +20,7 @@ urlpatterns = [
     path('entrytocrypto/', entrytocrypto, name='entrytocrypto'),
     path('riskmanagement/', riskmanagement, name='riskmanagement'),
     path('ticaretstrategy/', ticaretstrategy, name='ticaretstrategy'),
+    path('faq/', faq, name='faq'),
 
     path('contact/', contact, name='contact'),
 
