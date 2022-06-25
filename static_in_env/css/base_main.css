@@ -141,7 +141,20 @@ body{
     }
     
 }
-
+@media screen and (max-width: 992px) {
+    .cabinetinfo{
+        padding-top: 50px !important;
+    }  
+    .btntxt{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 334px) {
+    .button-9{
+        height: 60px !important;
+    }
+}
 /* Buttons on lobby */
 .room-wrapper{
     height: 50px !important;
