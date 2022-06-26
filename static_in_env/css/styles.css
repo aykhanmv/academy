@@ -12,6 +12,9 @@
 	width: 170px !important;
 	border-width: thin !important;
 }
+.item-text{
+	line-height: 17px !important;
+}
 .seminar{
 	border-style: solid;
 	border-width: 10px;

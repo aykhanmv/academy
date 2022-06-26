@@ -37,8 +37,21 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="{% url 'academy' %}#header">Ana Səhifə <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{% url 'academy' %}#courses">Kurslar</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="{% url 'academy' %}#courses" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Kurslar</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{% url 'entrytocrypto' %}#details"><span class="item-text">Kriptovalyutaya giriş</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="{% url 'fundamental' %}#detailsbook"><span class="item-text">Fundamental analiz</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="{% url 'technical' %}#features"><span class="item-text">Texniki analiz</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="{% url 'priceaction' %}"><span class="item-text">Price action</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="{% url 'riskmanagement' %}"><span class="item-text">Riskin və balansın <wbr> idarə edilməsi</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="{% url 'ticaretstrategy' %}"><span class="item-text">Ticarət strategiyası<wbr> və psixologiyası</span></a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="{% url 'academy' %}#pricing">Tədris paketlərimiz</a>
