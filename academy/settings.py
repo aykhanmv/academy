@@ -78,8 +78,16 @@ WSGI_APPLICATION = 'academy.wsgi.application'
 #         }
 #     }
 # else:
-DATABASES = env('DATABASES')
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'academydb',
+        'USER': 'academy_admin',
+        'PASSWORD': 'Aykhan@6446',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
