@@ -22,7 +22,7 @@
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown lipc">
                     <a class="nav-link dropdown-toggle page-scroll" href="{% url 'academy' %}" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Blockchain Academy</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{% url 'academy' %}#details"><span class="item-text">Haqqımızda</span></a>
@@ -34,17 +34,35 @@
                         <a class="dropdown-item" href="{% url 'faq' %}"><span class="item-text">FAQ</span></a>
                     </div>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{% url 'academy' %}#header">Ana Səhifə <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll hp" href="{% url 'academy' %}#header">Ana Səhifə <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown">
+
+                <!-- Mobile  -->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll limobile" href="{% url 'academy' %}#details">Haqqımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll limobile" href="{% url 'academy' %}#detailsbook">Kripto İnvest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll limobile" href="{% url 'academy' %}#features">Komandamız</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll limobile" href="{% url 'faq' %}">FAQ</a>
+                </li>
+                <div class="dropdown-items-divide-hr limobile"></div>
+                <!--  -->
+
+                <li class="nav-item dropdown lipc">
                     <a class="nav-link dropdown-toggle page-scroll" href="{% url 'academy' %}#courses" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Kurslar</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{% url 'entrytocrypto' %}#details"><span class="item-text">Kriptovalyutaya giriş</span></a>
+                        <a class="dropdown-item" href="{% url 'entrytocrypto' %}"><span class="item-text">Kriptovalyutaya giriş</span></a>
                         <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="{% url 'fundamental' %}#detailsbook"><span class="item-text">Fundamental analiz</span></a>
+                        <a class="dropdown-item" href="{% url 'fundamental' %}"><span class="item-text">Fundamental analiz</span></a>
                         <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="{% url 'technical' %}#features"><span class="item-text">Texniki analiz</span></a>
+                        <a class="dropdown-item" href="{% url 'technical' %}"><span class="item-text">Texniki analiz</span></a>
                         <div class="dropdown-items-divide-hr"></div>
                         <a class="dropdown-item" href="{% url 'priceaction' %}"><span class="item-text">Price action</span></a>
                         <div class="dropdown-items-divide-hr"></div>
@@ -53,6 +71,29 @@
                         <a class="dropdown-item" href="{% url 'ticaretstrategy' %}"><span class="item-text">Ticarət strategiyası<wbr> və psixologiyası</span></a>
                     </div>
                 </li>
+
+                <!-- Mobile  -->
+                <li class="nav-item">
+                    <a class="nav-link page-scroll limobile" href="{% url 'entrytocrypto' %}">Kriptovalyutaya giriş</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll limobile" href="{% url 'fundamental' %}">Fundamental analiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll limobile" href="{% url 'technical' %}">Texniki analiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll limobile" href="{% url 'priceaction' %}">Price action</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll limobile" href="{% url 'riskmanagement' %}">Riskin və balansın idarə edilməsi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll limobile" href="{% url 'ticaretstrategy' %}">Ticarət strategiyası və psixologiyası</a>
+                </li>
+                <div class="dropdown-items-divide-hr limobile"></div>
+                <!--  -->
+
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="{% url 'academy' %}#pricing">Tədris paketlərimiz</a>
                 </li>
