@@ -86,7 +86,40 @@
         font-size: 13px;
     }
 }
-
+/* Contact page */
+.contact-form-wrapper{
+	background-color: #F3F7FD;
+	padding-top: 30px; 
+	padding-bottom: 30px;
+}
+.intxt{
+	margin-bottom: 20px !important;
+}
+input, textarea{
+	border-radius: 5px !important;
+	border: 1px solid #c7c7da !important;
+}
+.intxt:focus, #nemail:focus, textarea:focus, textarea:active{
+	border: 5px solid rgba(3, 0, 165, 0.116) !important;
+	outline: none !important;
+}
+.form-btn-wrapper{
+	padding-top: 20px;
+	text-align: center !important;
+}
+.input-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.wrapper-parts{
+	width: 45% !important;
+}
+@media (max-width: 992px) {
+	.wrapper-parts{
+		width: 100% !important;
+	}
+}
 /* General styling */
 .boldintxt{
     font-weight: 700;
@@ -685,12 +718,11 @@ select::-ms-expand {
 	transition: all 0.2s;
 }
 
-.form-control-input:focus,
+/* .form-control-input:focus,
 .form-control-select:focus,
 .form-control-textarea:focus {
 	border: 1px solid #a1a1a1;
-	outline: none; /* Removes blue border on focus */
-}
+} */
 
 .form-control-input:hover,
 .form-control-select:hover,

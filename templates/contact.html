@@ -21,21 +21,17 @@
     </div> 
 </header> 
 
-
-
-
 <div class="ex-basic-1">
     <div class="container"> 
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumbs">
-                    <a href="{% url 'academy' %}">Home</a><i class="fa fa-angle-double-right"></i><span>Kriptovalyutaya giriş</span>
+                    <a href="{% url 'academy' %}">Home</a><i class="fa fa-angle-double-right"></i><span>Əlaqə</span>
                 </div> 
             </div> 
         </div> 
     </div> 
 </div> 
-
 
 <div class="container-fluid">
     <div class="container contact-wrapper">
@@ -76,15 +72,48 @@
     </div>
 </div>
 
+<div class="container-fluid contact-form-wrapper">
+    <div class="container">
+        <form action="" method="POST" class="contact-form" >
+            {% csrf_token %}
+            <div class="input-wrapper">
+                <div class="wrapper-parts">
+                    <div class="formcontrol">
+                        <div class="tag"><h1 style="font-size: 16px;" >Ad və soyad</h1></div>
+                        <input class="intxt" type="text" name="fullname" required>
+                    </div>
+                    <div class="formcontrol">
+                        <div class="tag"><h1 style="font-size: 16px;" >E-poçt adresi</h1></div>
+                        <input class="intxt" type="text" name="email">
+                    </div>
+                    <div class="formcontrol">
+                        <div class="tag"><h1 style="font-size: 16px;" >Əlaqə nömrəsi</h1></div>
+                        <input class="intxt" type="text" name="number" required>
+                    </div>
+                </div>
+                <div class="wrapper-parts">
+                    <div class="formcontrol">
+                        <div style="margin-bottom: 15px !important;" class="tag"><h1 style="font-size: 16px;" >İsmarıc</h1></div>
+                        <textarea style="border-radius: 5px !important; border-width: 00.1rem !important;" name="message" cols="30" rows="10" required></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="formcontrol form-btn-wrapper">
+                <button style="width: 200px !important;"  type="Submit" class="form-control-submit-button">İsmarıc göndər</button>
+            </div>
+        </form>
+    </div>
+</div>
+
 <div class="form">
     <div class="container">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-lg-12">
                 <div class="text-container" id="abune">
                     <h2>Yeniliklərdən və kampaniyalarımızdan əvvəlcədən xəbər tut</h2>
                     <form id="newsletterForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="nemail" required>
+                            <input type="email" class="formcontrol-input" id="nemail" required>
                             <label class="label-control" for="nemail">E-poçt adresi</label>
                             <div class="help-block with-errors"></div>
                         </div>
@@ -97,7 +126,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="row">
             <div class="col-lg-12">
                 <div class="icon-container">
@@ -136,6 +165,8 @@
         </div>
     </div>
 </div>
+
+
 
 </body>
 {% include "scripts.html" %}
