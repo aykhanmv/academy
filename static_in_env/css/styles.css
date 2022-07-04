@@ -95,6 +95,9 @@
 .intxt{
 	margin-bottom: 20px !important;
 }
+.message-area{
+	resize: none;
+}
 input, textarea{
 	border-radius: 5px !important;
 	border: 1px solid #c7c7da !important;
