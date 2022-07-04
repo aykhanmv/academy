@@ -67,6 +67,9 @@
         </fieldset>
         <div class="form-group">
             <button class="btn btn-outline-info" type="submit">Daxil ol</button>
+            <small class="text-muted">
+                <a class="ml-2 haveaccount" href="{% url 'password_reset1' %}">Şifrəni unutmusan?</a>
+            </small>
         </div>
     </form>
     <div class="border-top pt-3">
@@ -75,7 +78,7 @@
         </small>
     </div>
 </div>
-<!-- <i class="far fa-eye" id="togglePassword"></i> -->
+
 <br>
 
 {% endblock content %}

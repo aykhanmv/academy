@@ -25,10 +25,25 @@
 <div class="ex-basic-1">
     <div class="container"> 
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12" style="display: flex;">
                 <div class="breadcrumbs">
                     <a href="{% url 'academy' %}">Home</a><i class="fa fa-angle-double-right"></i><span>Blockchain Cabinet</span>
-                </div> 
+                </div>
+                <div style="margin-left: auto;">
+                    <li class="dropdown">
+                        <div class="dd-button" >
+                            {{ user.username }}<i style="margin-left: auto; margin-right: 5px;" class="profile-options-icons fa-solid fa-user"></i>
+                        </div>
+                        <ul class="dd-menu dropdown-menu" style="width: 200px !important;">
+                            <a class="li-dec" href="{% url 'password_reset' %}">
+                                <li class="prifel-options" >Mənim hesabım<i class="profile-options-icons fas fa-edit"></i></li>
+                            </a>
+                            <a class="li-dec" href="{% url 'academy' %}">
+                                <li class="prifel-options border-top">Çıxış et <i class="profile-options-icons fa fa-sign-out"></i> </li>
+                            </a>
+                        </ul>
+                    </li>
+                </div>
             </div> 
         </div> 
     </div> 
@@ -237,8 +252,9 @@
         </div> <!-- end of row -->
     </div> <!-- end of container -->
 </div> <!-- end of tabs -->
-<script src="{% static 'js/custom.js' %}"></script> 
+
 <script type="text/javascript" src="{% static '/js/custom.js' %}"></script>
+
 <style>
     .cc-80ms{
         font-size: 50px !important;
@@ -247,6 +263,7 @@
         display: none !important;
     }
 </style>
+
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
@@ -257,7 +274,8 @@
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
     })();
-    </script>
+</script>
+
 {% include "scripts.html" %}
 {% include "footer.html" %}
 <!--  -->
