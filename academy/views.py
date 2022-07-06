@@ -72,8 +72,7 @@ def contact(request):
             '''.format(data['message'], data['email'], data['number'])
 
             messages.success(request, f'İsmarıcınız uğura göndərildi') 
-            con = 1
-            send_mail(data['name'], message, '', [env('EMAIL_HOST_USER')], con)
+            send_mail(data['name'], message, '', [env('EMAIL_HOST_USER')])
             return redirect('contact')
 
         else:
