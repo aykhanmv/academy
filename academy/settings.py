@@ -22,7 +22,7 @@ DEBUG = False
 if DEBUG:
     ALLOWED_HOSTS = ['localhost']
 else:
-    ALLOWED_HOSTS = ['157.245.73.39', 'blockchainacademy.az', 'www.blockchainacademy.az']
+    ALLOWED_HOSTS = ['188.166.114.15', 'blockchainacademy.az', 'www.blockchainacademy.az']
 
 # Application definition
 
