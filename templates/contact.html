@@ -99,14 +99,14 @@
                         <textarea class="message-area" style="border-radius: 5px !important; border-width: 00.1rem !important;" name="message" cols="30" rows="10" required></textarea>
                     </div>
                 </div>
+                {% if messages and con %}
+                {% for message in messages %}
+                  <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                  </div>
+                {% endfor %}
+                {% endif %}
             </div>
-            {% if messages %}
-            {% for message in messages %}
-              <div class="alert alert-{{ message.tags }}">
-                {{ message }}
-              </div>
-            {% endfor %}
-            {% endif %}
             <div class="formcontrol form-btn-wrapper">
                 <button style="width: 200px !important;"  type="Submit" class="form-control-submit-button">İsmarıc göndər</button>
             </div>
@@ -130,9 +130,9 @@
                         </div>
                         {% if messages %}
                         {% for message in messages %}
-                          <div class="alert alert-{{ message.tags }}">
-                            {{ message }}
-                          </div>
+                            <div class="alert alert-{{ message.tags }}">
+                                {{ message }}
+                            </div>
                         {% endfor %}
                         {% endif %}
                         <div class="formcontrol form-btn-wrapper">

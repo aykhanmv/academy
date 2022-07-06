@@ -62,7 +62,7 @@ def contact(request):
                 'message' : message
             }
 
-            message = '''
+            message = '''   
             
             New message: {}
 
@@ -72,7 +72,8 @@ def contact(request):
             '''.format(data['message'], data['email'], data['number'])
 
             messages.success(request, f'İsmarıcınız uğura göndərildi') 
-            send_mail(data['name'], message, '', [env('EMAIL_HOST_USER')])
+            con = 1
+            send_mail(data['name'], message, '', [env('EMAIL_HOST_USER')], con)
             return redirect('contact')
 
         else:
