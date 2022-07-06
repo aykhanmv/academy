@@ -1,6 +1,4 @@
-/******************************/
-/*            FAQ             */
-/******************************/
+/* FAQ */
 .section_heading{
 	padding-bottom: 30px;
 }
@@ -88,11 +86,7 @@
         font-size: 13px;
     }
 }
-
-/******************************/
-/*           Contact          */
-/******************************/
-
+/* Contact page */
 .contact-form-wrapper{
 	background-color: #F3F7FD;
 	padding-top: 30px; 
@@ -129,12 +123,7 @@ input, textarea{
 		width: 100% !important;
 	}
 }
-
-
-/******************************/
-/*     General styling        */
-/******************************/
-
+/* General styling */
 .boldintxt{
     font-weight: 700;
 }
@@ -162,19 +151,11 @@ input, textarea{
 	-webkit-box-shadow: 12px 12px 24px #211f7cb0, -12px -12px 24px #ffffff;
 	box-shadow: 12px 12px 24px #211f7c9c, -12px -12px 24px #ffffff;
 }
-
-/******************************/
-/*     Chatting widthet       */
-/******************************/
-
+/* chatting widget */
 .tawk-min-container, .tawk-button{
 	padding-left: 100px !important;
 }
-
-/******************************/
-/*          Contact           */
-/******************************/
-
+/* contact */
 input[type=text], input[type=email], textarea {
 	width: 100%;
 	padding: 12px 20px;
@@ -201,11 +182,7 @@ input[type=text], input[type=email], textarea {
 	text-align: center;
 	width: 300px;
 }
-
-/******************************/
-/*          Cards             */
-/******************************/
-
+/* -----------------cards ------------------------- */
 #pricing{
 	display: flex !important;
 	flex-wrap: wrap !important;
@@ -223,6 +200,14 @@ input[type=text], input[type=email], textarea {
 	margin-bottom: 50px;
 }
 #methods{
+	/* padding: 15px !important;
+	height: 300px !important;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	background: #ffffff;
+	-webkit-box-shadow: 12px 12px 24px #d9d9d9, -12px -12px 24px #ffffff;
+	box-shadow: 12px 12px 24px #d9d9d9, -12px -12px 24px #ffffff;
+	word-wrap: break-word; */
 	background-color: #F3F7FD !important;
 }
 #downtocards{
@@ -237,6 +222,7 @@ input[type=text], input[type=email], textarea {
   }
   .cardarea{
 	  min-height: fit-content;
+	  /* border-style: solid; */
   }
   .cardback{
 	  margin-left: auto;
@@ -246,6 +232,9 @@ input[type=text], input[type=email], textarea {
 	  flex-wrap: wrap;
 	  justify-content: center;
 	  justify-content: space-around;
+	  /* width: 80%; */
+	  /* align-items: center; */
+	  /* border-style: solid; */
   }
   .card1{
 	-webkit-border-radius: 25px;
@@ -256,6 +245,7 @@ input[type=text], input[type=email], textarea {
 	padding: 20px !important;
 	width: 340px;
 	margin-top: 30px;
+	/* background-color: #F7CE21; */
 	word-wrap: break-word;
   }
   .card{
@@ -285,16 +275,15 @@ input[type=text], input[type=email], textarea {
 	
   }
 
-/******************************/
-/*            Arrows          */
-/******************************/
- 
+
+/* arrows */
 .arrowweird{
 	padding-top: 29px;
 }
 .arrowdiv{
 	display: flex;
 	align-items: center;
+	/* border-style: solid; */
 	border-radius: 10px;
 	align-self: flex-end;
 }
@@ -328,7 +317,7 @@ input[type=text], input[type=email], textarea {
 100% {opacity:0}
 }
 
-@-webkit-keyframes arrow
+@-webkit-keyframes arrow /*Safari and Chrome*/
 {
 0% {opacity:0}
 40% {opacity:1}
@@ -338,22 +327,19 @@ input[type=text], input[type=email], textarea {
 
 .arrows path.a1 {
 	animation-delay:-1s;
-	-webkit-animation-delay:-1s; 
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
 
 .arrows path.a2 {
 	animation-delay:-0.5s;
-	-webkit-animation-delay:-0.5s; 
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
 }
 
 .arrows path.a3 {	
 	animation-delay:0s;
-	-webkit-animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
-
-/******************************/
-/*            Book            */
-/******************************/
-
+/*----------- book---- */
 .booktext{
 	margin-top: auto !important;
 	margin-bottom: auto !important;
@@ -381,11 +367,7 @@ input[type=text], input[type=email], textarea {
 	color: #201F7C !important;
 	font-size: 35px !important;
 }
-
-/******************************/
-/*          Subjects          */
-/******************************/
-
+/* -------------------------------What do we teach?---------------------------- */
 .infoheaderback{
 	margin-top: 50px !important;
 	height: 300px;
@@ -406,11 +388,7 @@ input[type=text], input[type=email], textarea {
 	width: 80%;
 	margin-top: 80px;
 }
-
-/******************************/
-/*        Coinmarketcap       */
-/******************************/
-
+/* -------------------------------Crypto prices----------------- */
 .coin-marquee-item{
 	display: flex;
 	margin-right: 30px;
@@ -421,6 +399,7 @@ input[type=text], input[type=email], textarea {
 	box-shadow: 12px 12px 24px #d9d9d9, -12px -12px 24px #ffffff;
 	padding: 15px !important;
 	margin-top: 30px;
+	/* background-color: #F7CE21; */
 	word-wrap: break-word;
 }
 
@@ -656,6 +635,7 @@ a.white {
 	transition: all 0.2s ease;
 }
 
+/* IE10+ hack to solve lower label text position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
 	.label-control {
 		top: 0.9375rem;
@@ -674,7 +654,7 @@ a.white {
 
 .form-control-input,
 .form-control-select {
-	display: block;
+	display: block; /* needed for proper display of the label in Firefox, IE, Edge */
 	width: 100%;
 	padding-top: 1.0625rem;
 	padding-bottom: 0.0625rem;
@@ -685,7 +665,7 @@ a.white {
 	color: #555;
 	font: 400 0.875rem/1.875rem "Open Sans", sans-serif;
 	transition: all 0.2s;
-	-webkit-appearance: none;
+	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
 }
 
 .form-control-select {
@@ -694,6 +674,7 @@ a.white {
 	height: 3rem;
 }
 
+/* IE10+ hack to solve lower label text position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
 	.form-control-input {
 		padding-top: 1.25rem;
@@ -710,6 +691,7 @@ a.white {
 }
 
 select {
+    /* you should keep these first rules in place to maintain cross-browser behavior */
     -webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
@@ -722,13 +704,13 @@ select {
 }
 
 select::-ms-expand {
-    display: none; 
+    display: none; /* removes the ugly default down arrow on select form field in IE11 */
 }
 
 .form-control-textarea {
-	display: block; 
+	display: block; /* used to eliminate a bottom gap difference between Chrome and IE/FF */
 	width: 100%;
-	height: 8rem; 
+	height: 8rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
 	padding-top: 1.25rem;
 	padding-left: 1.3125rem;
 	border: 1px solid #c4d8dc;
@@ -738,6 +720,12 @@ select::-ms-expand {
 	font: 400 0.875rem/1.75rem "Open Sans", sans-serif;
 	transition: all 0.2s;
 }
+
+/* .form-control-input:focus,
+.form-control-select:focus,
+.form-control-textarea:focus {
+	border: 1px solid #a1a1a1;
+} */
 
 .form-control-input:hover,
 .form-control-select:hover,
@@ -754,6 +742,7 @@ input[type='checkbox'] {
 	margin-right: 0.375rem;
 }
 
+/* IE10+ hack to raise checkbox field position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
 	input[type='checkbox'] {
 		vertical-align: -9%;
@@ -778,6 +767,7 @@ input[type='checkbox'] {
 	color: #201F7C;
 }
 
+/* Form Success And Error Message Formatting */
 #smsgSubmit.h3.text-center.tada.animated,
 #lmsgSubmit.h3.text-center.tada.animated,
 #nmsgSubmit.h3.text-center.tada.animated,
@@ -1703,6 +1693,7 @@ input[type='checkbox'] {
 
 .slider-2 .swiper-button-prev:focus,
 .slider-2 .swiper-button-next:focus {
+	/* even if you can't see it chrome you can see it on mobile device */
 	outline: none;
 }
 
@@ -2013,7 +2004,8 @@ a:hover.back-to-top {
 /*****************************/	
 /* Min-width width 768px */
 @media (min-width: 768px) {
-
+	
+	/* General Styles */
 	.p-heading {
 		width: 85%;
 		margin-right: auto;
@@ -2025,7 +2017,10 @@ a:hover.back-to-top {
 		margin-right: auto;
 		margin-left: auto;
 	}
+	/* end of general styles */
 
+
+	/* Header */
 	.header .text-container {
 		margin-bottom: 4rem;
 	}
@@ -2043,7 +2038,10 @@ a:hover.back-to-top {
 	.header-frame {
 		height: 5.5rem;
 	}
+	/* end of header */
 
+
+	/* Testimonials */
 	.slider-2 .swiper-button-prev {
 		width: 1.375rem;
 		background-size: 1.375rem 2.125rem;
@@ -2053,7 +2051,10 @@ a:hover.back-to-top {
 		width: 1.375rem;
 		background-size: 1.375rem 2.125rem;
 	}
+	/* end of testimonials */
 
+
+	/* Newsletter */
 	.form .text-container {
 		padding: 4rem 2.5rem 3rem 2.5rem;
 	}
@@ -2062,11 +2063,17 @@ a:hover.back-to-top {
 		margin-right: 4rem;
 		margin-left: 4rem;
 	}
+	/* end of newsletter */
 
+
+	/* Footer */
 	.footer-frame {
 		height: 5rem;
 	}
+	/* end of footer */
 
+
+	/* Extra Pages */
 	.ex-header {
 		padding-top: 11rem;
 		padding-bottom: 9rem;
@@ -2079,7 +2086,10 @@ a:hover.back-to-top {
 	.ex-basic-2 .form-container {
 		margin-top: 0;
 	}
+	/* end of extra pages */
 
+
+	/* Sign Up And Log In Pages */
 	.ex-2-header {
 		padding-top: 11rem;
 	}
@@ -2087,7 +2097,9 @@ a:hover.back-to-top {
 	.ex-2-header .form-container {
 		padding: 2.25rem 1.75rem 1.25rem 1.75rem;
 	}
+	/* end of sign up and log in pages */
 }
+/* end of min-width width 768px */
 .navbar-custom.top-nav-collapse {
 	padding: 0.5rem 1.5rem 0.5rem 2rem;
 	background-color: #201F7C;
@@ -2102,8 +2114,10 @@ a:hover.back-to-top {
 	}
 }
 
+/* Min-width width 992px */
 @media (min-width: 992px) {
 	
+	/* Navigation */
 	.navbar-custom {
 		padding: 2.125rem 1.5rem 2.125rem 2rem;
         background: transparent;
@@ -2163,7 +2177,10 @@ a:hover.back-to-top {
 		margin-bottom: 0;
 		margin-left: 1rem;
 	}
+	/* end of navigation */
 
+
+	/* General Styles */
 	.p-heading {
 		width: 65%;
 	}
@@ -2171,7 +2188,10 @@ a:hover.back-to-top {
 	.h2-heading {
 		width: 60%;
 	}
+	/* end of general styles */
 
+
+	/* Header */
 	.header .header-content {
 		text-align: left;
 	}
@@ -2195,7 +2215,10 @@ a:hover.back-to-top {
 	.header-frame {
 		height: 8rem;
 	}
+	/* end of header */
 
+
+	/* Description */
 	.cards-1 .card {
 		display: inline-block;
 		width: 17rem;
@@ -2208,7 +2231,10 @@ a:hover.back-to-top {
 	.cards-1 .card-image {
 		width: 9rem;
 	}
+	/* end of description */
 
+
+	/* Features */
 	.tabs .nav-tabs {
 		display: flex;
 		justify-content: center;
@@ -2229,7 +2255,10 @@ a:hover.back-to-top {
 	.tabs .image-container {
 		margin-bottom: 0;
 	}
+	/* end of features */
 
+
+	/* Features Lightboxes */
 	.lightbox-basic {
 		max-width: 62.5rem;
 		padding: 2.5rem 2.5rem 2.5rem 2.5rem;
@@ -2245,7 +2274,10 @@ a:hover.back-to-top {
 	.lightbox-basic h3 {
 		margin-top: 0.5rem;
 	}
+	/* end of features lightboxes */
 
+
+	/* Details */
 	.basic-1 {
 		padding-top: 8rem;
 	}
@@ -2253,7 +2285,10 @@ a:hover.back-to-top {
 	.basic-1 .text-container {
 		margin-bottom: 0;
 	}
+	/* end of details */
 
+
+	/* Video */
 	.basic-2 .image-container {
 		max-width: 53.125rem;
 		margin-right: auto;
@@ -2265,14 +2300,20 @@ a:hover.back-to-top {
 		margin-right: auto;
 		margin-left: auto;
 	}
+	/* end of video */
 
+
+	/* Pricing */
 	.cards-2 .card {
 		display: inline-block;
 		margin-right: 0.5rem;
 		margin-left: 0.5rem;
 		vertical-align: top;
 	}
+	/* end of pricing */
 
+
+	/* Testimonials */
 	.slider-2 .swiper-container {
 		width: 92%;
 		text-align: left;
@@ -2297,7 +2338,10 @@ a:hover.back-to-top {
 	.slider-2 .swiper-button-next {
 		right: -0.75rem;
 	}
+	/* end of testimonials */
 
+
+	/* Newsletter */
 	.form .text-container {
 		width: 55rem;
 		margin-right: auto;
@@ -2315,7 +2359,10 @@ a:hover.back-to-top {
 		margin-right: 9rem;
 		margin-left: 9rem;
 	}
+	/* end of newsletter */
 
+
+	/* Extra Pages */
 	.ex-header h1 {
 		width: 80%;
 		margin-right: auto;
@@ -2325,14 +2372,22 @@ a:hover.back-to-top {
 	.ex-basic-2 {
 		padding-bottom: 5rem;
 	}
+	/* end of extra pages */
 }
+/* end of min-width width 992px */
 
+
+/* Min-width width 1200px */
 @media (min-width: 1200px) {
 	
+	/* General Styles */
 	.h2-heading {
 		width: 50%;
 	}
+	/* end of general styles */
 
+
+	/* Header */
 	.header .header-content {
 		padding-top: 11rem;
 		padding-bottom: 5rem;
@@ -2355,12 +2410,18 @@ a:hover.back-to-top {
 	.header-frame {
 		height: 9.375rem;
 	}
+	/* end of header */
+	
 
+	/* Customer */
 	.slider-1 .slider-container {
 		margin-right: 3rem;
 		margin-left: 3rem;
 	}
+	/* end of customer */
 
+
+	/* Description */
 	.cards-1 .card {
 		width: 18.875rem;
 		margin-right: 2rem;
@@ -2370,7 +2431,10 @@ a:hover.back-to-top {
 	.cards-1 .card-image {
 		width: 12.5rem;
 	}
+	/* end of description */
 
+
+	/* Features */
 	.tabs .image-container {
 		margin-right: 1.5rem;
 		margin-left: 1rem;
@@ -2381,7 +2445,10 @@ a:hover.back-to-top {
 		margin-right: 1rem;
 		margin-left: 1.5rem;
 	}
+	/* end of features */
 
+
+	/* Details */
 	.basic-1 .image-container {
 		margin-right: 1rem;
 		margin-left: 1.5rem;
@@ -2396,7 +2463,10 @@ a:hover.back-to-top {
 	.basic-1 h2 {
 		margin-bottom: 1rem;
 	}
+	/* end of details */
 
+
+	/* Pricing */
 	.cards-2 .card {
 		width: 19.375rem;
 		max-width: 100%;
@@ -2408,13 +2478,19 @@ a:hover.back-to-top {
 		padding-right: 2.25rem;
 		padding-left: 2.25rem;
 	}
+	/* end of pricing */
 
+
+	/* Testimonials */
 	.slider-2 .slider-container {
 		width: 64.125rem;
 		margin-right: auto;
 		margin-left: auto;
 	}
+	/* end of testimonials */
 
+
+	/* Newsletter */
 	.form .text-container {
 		width: 64.75rem;
 		padding-top: 6rem;
@@ -2430,7 +2506,10 @@ a:hover.back-to-top {
 		margin-right: 15rem;
 		margin-left: 15rem;
 	}
+	/* end of newsletter */
 
+
+	/* Footer */
 	.footer .footer-col.first {
 		margin-right: 1.5rem;
 	}
@@ -2443,7 +2522,10 @@ a:hover.back-to-top {
 	.footer .footer-col.last {
 		margin-left: 1.5rem;
 	}
+	/* end of footer */
 
+
+	/* Extra Pages */
 	.ex-header h1 {
 		width: 60%;
 		margin-right: auto;
@@ -2457,4 +2539,6 @@ a:hover.back-to-top {
 	.ex-basic-2 .image-container-small {
 		margin-left: 1.75rem;
 	}
+	/* end of extra pages */
 }
+/* end of min-width width 1200px */
