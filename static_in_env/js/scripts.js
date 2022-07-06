@@ -155,35 +155,13 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             sformError();
-            ssubmitMSG(false, "Please fill all fields!");
+            ssubmitMSG(false, "Zəhmət olmasa lazımi xanaları doldurun!");
         } else {
             // everything looks good!
             event.preventDefault();
             ssubmitForm();
         }
     });
-
-    function ssubmitForm() {
-        // initiate variables with form content
-		var email = $("#semail").val();
-		var name = $("#sname").val();
-		var password = $("#spassword").val();
-        var terms = $("#sterms").val();
-        
-        $.ajax({
-            type: "POST",
-            url: "php/signupform-process.php",
-            data: "email=" + email + "&name=" + name + "&password=" + password + "&terms=" + terms, 
-            success: function(text) {
-                if (text == "success") {
-                    sformSuccess();
-                } else {
-                    sformError();
-                    ssubmitMSG(false, text);
-                }
-            }
-        });
-	}
 
     function sformSuccess() {
         $("#signUpForm")[0].reset();
@@ -212,7 +190,7 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             lformError();
-            lsubmitMSG(false, "Please fill all fields!");
+            lsubmitMSG(false, "Zəhmət olmasa lazımi xanaları doldurun!");
         } else {
             // everything looks good!
             event.preventDefault();
@@ -220,25 +198,6 @@
         }
     });
 
-    function lsubmitForm() {
-        // initiate variables with form content
-		var email = $("#lemail").val();
-		var password = $("#lpassword").val();
-        
-        $.ajax({
-            type: "POST",
-            url: "php/loginform-process.php",
-            data: "email=" + email + "&password=" + password, 
-            success: function(text) {
-                if (text == "success") {
-                    lformSuccess();
-                } else {
-                    lformError();
-                    lsubmitMSG(false, text);
-                }
-            }
-        });
-	}
 
     function lformSuccess() {
         $("#logInForm")[0].reset();
@@ -267,32 +226,13 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             nformError();
-            nsubmitMSG(false, "Please fill all fields!");
+            nsubmitMSG(false, "Zəhmət olmasa lazımi xanaları doldurun!");
         } else {
             // everything looks good!
             event.preventDefault();
             nsubmitForm();
         }
     });
-
-    function nsubmitForm() {
-        // initiate variables with form content
-		var email = $("#nemail").val();
-        var terms = $("#nterms").val();
-        $.ajax({
-            type: "POST",
-            url: "php/newsletterform-process.php",
-            data: "email=" + email + "&terms=" + terms, 
-            success: function(text) {
-                if (text == "success") {
-                    nformSuccess();
-                } else {
-                    nformError();
-                    nsubmitMSG(false, text);
-                }
-            }
-        });
-	}
 
     function nformSuccess() {
         $("#newsletterForm")[0].reset();
@@ -321,35 +261,13 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             pformError();
-            psubmitMSG(false, "Please fill all fields!");
+            psubmitMSG(false, "Zəhmət olmasa lazımi xanaları doldurun!");
         } else {
             // everything looks good!
             event.preventDefault();
             psubmitForm();
         }
     });
-
-    function psubmitForm() {
-        // initiate variables with form content
-		var name = $("#pname").val();
-		var email = $("#pemail").val();
-        var select = $("#pselect").val();
-        var terms = $("#pterms").val();
-        
-        $.ajax({
-            type: "POST",
-            url: "php/privacyform-process.php",
-            data: "name=" + name + "&email=" + email + "&select=" + select + "&terms=" + terms, 
-            success: function(text) {
-                if (text == "success") {
-                    pformSuccess();
-                } else {
-                    pformError();
-                    psubmitMSG(false, text);
-                }
-            }
-        });
-	}
 
     function pformSuccess() {
         $("#privacyForm")[0].reset();

@@ -8,47 +8,6 @@
     }
 </style>
 
-<!-- Sponsorlar -->
-<!-- <div class="slider-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-
-                <div class="slider-container">
-                    <div class="swiper-container image-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                    <img class="img-fluid" src="{% static 'images/customer-logo-1.png' %}" alt="alternative">
-                            </div>
-                            <div class="swiper-slide">
-                                    <img class="img-fluid" src="{% static 'images/customer-logo-2.png' %}" alt="alternative">
-                            </div>
-                            <div class="swiper-slide">
-                                    <img class="img-fluid" src="{% static 'images/customer-logo-3.png' %}" alt="alternative">
-                            </div>
-                            <div class="swiper-slide">
-                                    <img class="img-fluid" src="{% static 'images/customer-logo-4.png' %}" alt="alternative">
-                            </div>
-                            <div class="swiper-slide">
-                                    <img class="img-fluid" src="{% static 'images/customer-logo-5.png' %}" alt="alternative">
-                            </div>
-                            <div class="swiper-slide">
-                                    <img class="img-fluid" src="{% static 'images/customer-logo-6.png' %}" alt="alternative">
-                            </div>
-                        </div> 
-                    </div>
-                </div> 
-
-            </div>
-        </div>
-    </div> 
-</div> 
-<style>
-html {
-    scroll-behavior: smooth !important;
-}   
-</style> -->
-
 <!-- CoinMarketCap -->
 <style>
     .coin-marquee-header{
@@ -70,7 +29,7 @@ html {
 <div id="courses"></div>
 <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="1,1027,825,2010,1958,52,3890,6535,7102" currency="USD" theme="light" transparent="true" show-symbol-logo="true"></div>
 
-<!-- Tədris paketləri -->
+<!-- Subjects -->
 <div class="container-fluid cardarea">
     <div style="text-align: center; margin-bottom: 50px;">
         <h2 class="h2-heading">Nəyi tədirs edirik?</h2>
@@ -167,7 +126,7 @@ html {
     </div>
 </div>
 
-<!-- Tədris metodları -->
+<!-- Methods -->
 <div id="methods" class="cards-2">
     <div class="container">
         <div class="row">
@@ -215,7 +174,7 @@ html {
     </div>
 </div>
 
-<!-- Haqqımızda -->
+<!-- About us -->
 <div id="details" class="basic-1">
     <div class="container">
         <div class="row">
@@ -245,7 +204,7 @@ html {
 </div>
 
 
-<!-- Kitab -->
+<!-- Kripto İnvest -->
 <div id="detailsbook" class="basic-1 book">
     <div class="container">
         <div class="row">
@@ -273,28 +232,7 @@ html {
     </div> 
 </div> 
 
-<!-- Video -->
-<!-- <div id="video" class="basic-2">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="image-container">
-                    <div class="video-wrapper">
-                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
-                            <img class="img-fluid" src="{% static 'images/video-image.png' %}" alt="alternative">
-                            <span class="video-play-button">
-                                <span></span>
-                            </span>
-                        </a>
-                    </div> 
-                </div> 
-                <div class="p-heading">What better way to show off Tivo marketing automation saas app than presenting you some great situations of each module and tool available to users in a video</div>        
-            </div> 
-        </div> 
-    </div> 
-</div>  -->
-
-<!-- Tədris paketləri -->
+<!-- Offers -->
 <div id="pricing" class="cards-2">
     <div class="container">
         <div class="row">
@@ -384,7 +322,7 @@ html {
 </div>
     
 
-<!-- Komandamız -->
+<!-- Team -->
 <div id="features" class="tabs">
     <div class="container">
         <div class="row">
@@ -397,7 +335,6 @@ html {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">      
-                            
                             <div class="slider-container">
                                 <div class="swiper-container text-slider">
                                     <div class="swiper-wrapper">
@@ -457,58 +394,51 @@ html {
     </div>
 </div>
 
-<!-- Abunə ol -->
+<!-- Subscribe -->
 <div class="form">
     <div class="container">
-        <!-- <div class="row">
+        <div class="row" id="faqrow" >
             <div class="col-lg-12">
                 <div class="text-container" id="abune">
-                    <h2>Yeniliklərdən və kampaniyalarımızdan əvvəlcədən xəbər tut</h2>
-                    <form id="newsletterForm" data-toggle="validator" data-focus="false">
+                    <h2>Yeniliklərdən və kampaniyalarımızdan əvvəlcədən xəbər tut!</h2>
+                    <form action="" method="POST" class="contact-form" >
+                        {% csrf_token %}
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="nemail" required>
-                            <label class="label-control" for="nemail">E-poçt adresi</label>
-                            <div class="help-block with-errors"></div>
+                            <div class="formcontrol">
+                                <input class="form-control-input" type="email" name="email" placeholder="E-poçt adresi">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Abunə ol</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="nmsgSubmit" class="h3 text-center hidden"></div>
+                        {% if messages %}
+                        {% for message in messages %}
+                          <div class="alert alert-{{ message.tags }}">
+                            {{ message }}
+                          </div>
+                        {% endfor %}
+                        {% endif %}
+                        <div class="formcontrol form-btn-wrapper">
+                            <button style="width: 200px !important;"  type="Submit" class="form-control-submit-button">Abunə ol</button>
                         </div>
                     </form>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div class="row">
             <div class="col-lg-12">
                 <div class="icon-container">
                     <span class="fa-stack">
-                        <a href="https://www.facebook.com/blockchainacademy.az">
+                        <a href="#https://www.facebook.com/blockchainacademy.az">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-facebook-f fa-stack-1x"></i>
                         </a>
                     </span>
-                    <!-- <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-twitter fa-stack-1x"></i>
-                        </a>
-                    </span> -->
-                    <!-- <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                        </a>
-                    </span> -->
                     <span class="fa-stack">
-                        <a href="https://www.instagram.com/blockchainacademy.az/">
+                        <a href="#https://www.instagram.com/blockchainacademy.az/">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-instagram fa-stack-1x"></i>
                         </a>
                     </span>
                     <span class="fa-stack">
-                        <a href="https://wa.me/994504107075">
+                        <a href="#https://wa.me/994504107075">
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fab fa-whatsapp fa-stack-1x"></i>
                         </a>
@@ -518,4 +448,5 @@ html {
         </div>
     </div>
 </div>
+
 {% endblock content %}
