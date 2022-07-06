@@ -3,11 +3,14 @@ import os
 from pathlib import Path
 
 import environ
+# Initialise environment variables
 env = environ.Env()
 environ.Env.read_env()
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -16,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # Allowed hosts
 if DEBUG:
@@ -27,7 +30,7 @@ else:
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin', 
+    'django.contrib.admin',
     'django.contrib.auth',
     'users.apps.UsersConfig',
     'base.apps.BaseConfig',
@@ -130,8 +133,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static_in_env')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
-MEDIA_ROOT =os.path.join(BASE_DIR, 'media_root')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT =os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -141,6 +144,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'base'
+
 
 # Email configuration for contact form
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
