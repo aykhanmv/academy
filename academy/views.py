@@ -70,10 +70,8 @@ def contact(request):
 
             Number: {}
             '''.format(data['message'], data['email'], data['number'])
-
-            messages.success(request, f'İsmarıcınız uğura göndərildi') 
             send_mail(data['name'], message, '', [env('EMAIL_HOST_USER')])
-            return redirect('contact')
+            return redirect('/contact/?p=%s' % 'ticket' ) 
 
         else:
             email = request.POST.get('email')
@@ -90,11 +88,9 @@ def contact(request):
             E-mail: {}
             
             '''.format(data['message'], data['email'])
-            
-            messages.success(request, f'{email} uğurla abunə oldu!') 
-            send_mail("New subscription", message, '', [env('EMAIL_HOST_USER')])
-            return redirect('contact')
 
+            send_mail("New subscription", message, '', [env('EMAIL_HOST_USER')])
+            return redirect('/contact/?p=%s' % 'subscribed' ) 
     return render(request, 'contact.html', {'title': 'Blockchain Academy'})
 
 def faq(request):

@@ -99,13 +99,8 @@
                         <textarea class="message-area" style="border-radius: 5px !important; border-width: 00.1rem !important;" name="message" cols="30" rows="10" required></textarea>
                     </div>
                 </div>
-                {% if messages and con %}
-                {% for message in messages %}
-                  <div class="alert alert-{{ message.tags }}">
-                    {{ message }}
-                  </div>
-                {% endfor %}
-                {% endif %}
+            </div>
+            <div  style="display: none; text-align: center !important;" class="alert alert-success" id="ticket">
             </div>
             <div class="formcontrol form-btn-wrapper">
                 <button style="width: 200px !important;"  type="Submit" class="form-control-submit-button">İsmarıc göndər</button>
@@ -125,16 +120,11 @@
                         {% csrf_token %}
                         <div class="form-group">
                             <div class="formcontrol">
-                                <input class="form-control-input" type="email" name="email" placeholder="E-poçt adresi">
+                                <input id="email" class="form-control-input" type="email" name="email" placeholder="E-poçt adresi">
                             </div>
                         </div>
-                        {% if messages %}
-                        {% for message in messages %}
-                            <div class="alert alert-{{ message.tags }}">
-                                {{ message }}
-                            </div>
-                        {% endfor %}
-                        {% endif %}
+                        <div  style="display: none; text-align: center !important;" class="alert alert-success" id="subscribed">
+                        </div>
                         <div class="formcontrol form-btn-wrapper">
                             <button style="width: 200px !important;"  type="Submit" class="form-control-submit-button">Abunə ol</button>
                         </div>
@@ -168,6 +158,24 @@
         </div>
     </div>
 </div>
+
+<script>
+    var pathArray = window.location.href.split('=');
+    key = pathArray[1]
+
+    if (key == 'subscribed'){
+        document.getElementById("subscribed").style.display = "block";
+        document.getElementById('subscribed').innerHTML += 'Uğurla abunə olundu!';
+        var newURL = location.href.split("?")[0];
+        window.history.pushState('object', document.title, newURL);
+    }
+    if (key == 'ticket'){
+        document.getElementById("ticket").style.display = "block";
+        document.getElementById('ticket').innerHTML += 'İsmarıcınız uğurla göndərildi!';
+        var newURL = location.href.split("?")[0];
+        window.history.pushState('object', document.title, newURL);
+    }
+</script>
 
 </body>
 {% include "scripts.html" %}
