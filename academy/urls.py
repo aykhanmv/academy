@@ -3,8 +3,7 @@ from django.conf import settings
 from django.contrib.auth import views as auth_views 
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path
-
+from django.urls import path 
 
 from .views import academy, technical, fundamental, priceaction, entrytocrypto, riskmanagement, ticaretstrategy, contact, faq
 from users import views as users_views
@@ -36,6 +35,8 @@ urlpatterns = [
     path('password-reset-complete/done', auth_views.PasswordResetCompleteView.as_view(template_name='users/password_reset_complete.html'), name='password_reset_complete'),
 
     path('password-reset-1/', auth_views.PasswordResetView.as_view(template_name='users/password_reset1.html'), name='password_reset1'),
+
+    path('activate/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/',users_views.activate, name='activate'),  
 ]
 
 if settings.DEBUG:
