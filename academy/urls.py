@@ -9,8 +9,13 @@ from .views import academy, technical, fundamental, priceaction, entrytocrypto, 
 from users import views as users_views
 from base import views as base_views 
 
+import environ
+# Initialise environment variables
+env = environ.Env()
+environ.Env.read_env()
+
 urlpatterns = [
-    path('j898md398md3n/', admin.site.urls),
+    path(env('ADMIN_PAGE'), admin.site.urls),
     path('', academy, name='academy'),
 
     path('technical/', technical, name='technical'),
