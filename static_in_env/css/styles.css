@@ -183,7 +183,7 @@ input[type=text], input[type=email], textarea {
 	width: 300px;
 }
 /* -----------------cards ------------------------- */
-#pricing{
+#tədris-paketləri{
 	display: flex !important;
 	flex-wrap: wrap !important;
 	justify-content: space-around;
@@ -522,7 +522,7 @@ a.white {
 	border: 0.125rem solid #201F7C;
 	border-radius: 2rem;
 	background-color: #201F7C;
-	color: #fff;
+	color: #fff !important;
 	font: 700 0.875rem/0 "Open Sans", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s;
@@ -530,7 +530,7 @@ a.white {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #201F7C;
+	color: #201F7C !important;
 	text-decoration: none;
 }
 

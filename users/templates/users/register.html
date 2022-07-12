@@ -53,21 +53,21 @@
 </div>
 
 <div class="container registerform">
-    {% if messages %}
-    {% for message in messages %}
-      <div class="alert alert-{{ message.tags }}">
-        {{ message }}
-      </div>
-    {% endfor %}
-    {% endif %}
     <form method="POST">
         {% csrf_token %}
         <fieldset class="form-group">
             {{ form|crispy }}
         </fieldset>
         <div class="form-group">
-            <button class="btn btn-outline-info" type="submit">Qeydiyyatdan keç</button>
+            <button style="border-style: none;" type="submit"><a class="btn-solid-reg">Qeydiyyatdan keç</a></button>
         </div>
+        {% if messages %}
+        {% for message in messages %}
+          <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+          </div>
+        {% endfor %}
+        {% endif %}
     </form>
     <div class="border-top pt-3">
         <small class="text-muted">
