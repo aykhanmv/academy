@@ -32,14 +32,8 @@ urlpatterns = [
 
     path('qeydiyyat/', users_views.register, name='register'),
 
-
-
-
     path("daxil-ol", login_views.UserLoginForm, name="login"),
     path("blockchain-kabinet", login_views.UserLoginForm, name="login"),
-
-
-
 
     path('daxil-ol/blockchain-kabinet/', base_views.lobby, name='base'),
     path('çıxış-et/', auth_views.LogoutView.as_view(template_name='index.html'), name='logout'),
